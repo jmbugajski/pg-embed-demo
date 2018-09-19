@@ -79,7 +79,7 @@ div.grid-container {
 div.top-left {
 	grid-area: top-left;
 	background-color: #013daf;
-	padding: 4px 0 0 2px;
+	padding: 4px 0 0 10px;
 }
 
 div.top-header {
@@ -202,7 +202,7 @@ div#form-output {
 div.left {
 	float: left;
 	border: 1px solid #333;
-	border-radius: 5px;
+	border-radius: 6px;
 	width: 230px;
 	height: 40px;
 	margin: 4px 6px 0 0;

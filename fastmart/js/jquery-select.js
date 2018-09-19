@@ -1,12 +1,15 @@
 $(document).ready(function () {
     $("#type").change(function () {
         var store_group = $(this).val();
-        if (store_group == "store-group") {
+        if (store_group == "type-store-group") {
             $("#store").html("<option value='test-group-A'>Test Group A</option><option value='test-group-B'>Test Group B</option><option value='test-group-C'>Test Group C</option><option value='test-group-D'>Test Group D</option>");
-        } else if (store_group == "total-retailer") {
-            $("#store").html("<option value=''>N/A</option>");
-        } else if (store_group == "none") {
-            $("#store").html("<option value=''>-- Name --</option>");
+			$("#level").html("<option value='level-uat'>SIT UAT Test</option>");
+        } else if (store_group == "type-total-retailer") {
+            $("#store").html("<option value='store-none'>N/A</option>");
+			$("#level").html("<option value='level-none'>N/A</option>");
+        } else if (store_group == "type-none") {
+            $("#store").html("<option value='store-none'>-- Segment --</option>");
+			$("#level").html("<option value='level-none'>-- Cluster --</option>");
         }
     });
 	
