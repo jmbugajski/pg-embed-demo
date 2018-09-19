@@ -2,10 +2,9 @@ function validate () {
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	if ( username == "tim" && password == "tim") {
-		window.location = "fastmart.html";
+		window.location = "index-filtered.html";
 	}
 	else if ( username == "karen" && password == "karen") {
-		alert ("Login successful");
 		window.location = "index.html";
 	}
 	else alert ("Login Failed");

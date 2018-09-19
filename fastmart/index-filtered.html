@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FastMart Demo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/fastmart.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/jquery-select.js"></script>
+	<script src="js/get-selected.js"></script>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+  <div class="top-left">
+	  <a href="login.html" title="Logout"><img src="images/fastmart-f-only.gif" width="160" /></a>
+  </div>
+
+  <div class="top-header">
+	  <div class="row">
+		  <div class="left"><div class="label"><a target="iframe_a" href="https://35.201.92.166/embed/dashboards/4">Overview</a></div></div>
+		  <div class="left"><div class="label">Product & Store</div></div>
+		  <div class="left"><div class="label">Rolling Periods</div></div>
+		  <div class="left"><div class="label">InfoPage</div></div>
+		  <div class="left"><div class="label">PowerApps</div></div>
+	</div>
+  </div>
+
+  <div class="top-right">&nbsp;</div>
+
+	<div class="sidebar-left">
+
+	<form id="form-products" action="">			
+		
+		<div class="customer">
+		  	<p>Customer</p>
+			  <select name="customer" size="4" multiple>
+			    <option value="cust-walmart-us">Walmart US</option>
+			  </select>
+		</div>
+		
+		<div class="storegroups">
+			<p>Store</p>
+				<select name="type" id="type">
+				    <option value="type-none">-- Grouping --</option>
+				    <option value="type-store-group">Store Group</option>
+				    <option value="type-total-retailer">Total Retailer</option>
+				</select><br />
+				<select name="level" id="level">
+				    <option value="level-none">-- Cluster --</option>
+				</select>
+				<select name="store" id="store">
+				    <option value="store-none">-- Segment --</option>
+				</select>
+		</div>
+
+		<div class="prodhier">
+			<p>Sector</p>
+				<select name="sector" id="sector">
+				    <option value="sec-none">-- Sector --</option>
+				    <option value="sec-bh">BH</option>
+				    <option value="sec-hhc">HHC</option>
+				</select><br /><br />
+
+			<p>Products</p>
+				<select name="hier1" id="hier1">
+				    <option value="hier1-none">-- Category --</option>
+				    <option value="hier1-bs">Bar Soap</option>
+				    <option value="hier1-bt">Bath Tissue</option>
+				    <option value="hier1-bw">Body Wash</option>
+				    <option value="hier1-ft">Facial Tissue</option>
+					<option value="hier1-hl">Hand Liquids</option>
+				    <option value="hier1-np">Napkins</option>
+				    <option value="hier1-pt">Paper Towels</option>
+				</select><br />
+
+				<select name="hier2" id="hier2">
+				    <option value="hier2-none">-- Brand --</option>
+				    <option value="hier2-bounty">Bounty</option>
+				    <option value="hier2-camay">Camay</option>
+				    <option value="hier2-charmin">Charmin</option>
+				    <option value="hier2-gilette">Gilette</option>
+				    <option value="hier2-herbalessences">Herbal Essences</option>
+				    <option value="hier2-ivory">Ivory</option>
+				    <option value="hier2-olay">Olay</option>
+				    <option value="hier2-oldspice">Old Spice</option>
+				    <option value="hier2-puffs">Puffs</option>
+				    <option value="hier2-safeguard">Safeguard</option>
+				</select>
+
+			</form>
+			
+			<button id="clone-set">+</button>
+
+		</div>
+	</div>
+
+	<div class="center-embed">
+		<iframe frameborder="0" src="placeholder.html" name="iframe_a"></iframe>
+	</div>
+	<div class="sidebar-right">&nbsp;</div>
+
+</div>
+
+</body>
+</html>
