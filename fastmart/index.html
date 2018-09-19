@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FastMart Demo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/fastmart.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/jquery-select.js"></script>
+	<script src="js/get-selected.js"></script>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+  <div class="top-left">
+	  <a href="login.html" title="Logout"><img src="images/fastmart-f-only.gif" width="160" /></a>
+  </div>
+
+  <div class="top-header">
+	  <div class="row">
+		  <div class="left"><div class="label"><a target="iframe_a" href="https://35.201.92.166/embed/dashboards/4">Overview</a></div></div>
+		  <div class="left"><div class="label">Product & Store</div></div>
+		  <div class="left"><div class="label">Rolling Periods</div></div>
+		  <div class="left"><div class="label">InfoPage</div></div>
+		  <div class="left"><div class="label">PowerApps</div></div>
+	</div>
+  </div>
+
+  <div class="top-right">&nbsp;</div>
+
+	<div class="sidebar-left">
+
+	<form id="form-products" action="">			
+		
+		<div class="formblock">
+		  	<p>Customer</p>
+				<input name="customer-walmart" type="checkbox" id="customer-walmart" value="1" /><label for="customer-walmart">Wal-Mart</label><br />
+				<input name="customer-target" type="checkbox" id="customer-target" value="1" /><label for="customer-target">Target</label><br />
+				<input name="customer-safeway" type="checkbox" id="customer-safeway" value="1" /><label for="customer-safeway">Safeway</label>
+		</div>
+		
+		<div class="storegroups">
+			<p>Store Grouping</p>
+				<select name="type" id="type">
+				    <option value="none">-- Group --</option>
+				    <option value="store-group">Store Group</option>
+				    <option value="total-retailer">Total Retailer</option>
+				</select><br />
+				<select name="store" id="store">
+				    <option value="">-- Name --</option>
+				</select>
+		</div>
+
+		<div class="prodhier">
+			<p>Sector</p>
+				<select name="sector" id="sector">
+				    <option value="sec-none">-- Sector --</option>
+				    <option value="sec-bh">BH</option>
+				    <option value="sec-hhc">HHC</option>
+				</select><br /><br />
+
+			<p>Products</p>
+				<select name="hier1" id="hier1">
+				    <option value="hier1-none">-- Category --</option>
+				    <option value="hier1-bs">Bar Soap</option>
+				    <option value="hier1-bt">Bath Tissue</option>
+				    <option value="hier1-bw">Body Wash</option>
+				    <option value="hier1-ft">Facial Tissue</option>
+					<option value="hier1-hl">Hand Liquids</option>
+				    <option value="hier1-np">Napkins</option>
+				    <option value="hier1-pt">Paper Towels</option>
+				</select><br />
+
+				<select name="hier2" id="hier2">
+				    <option value="hier2-none">-- Brand --</option>
+				    <option value="hier2-bounty">Bounty</option>
+				    <option value="hier2-camay">Camay</option>
+				    <option value="hier2-charmin">Charmin</option>
+				    <option value="hier2-gilette">Gilette</option>
+				    <option value="hier2-herbalessences">Herbal Essences</option>
+				    <option value="hier2-ivory">Ivory</option>
+				    <option value="hier2-olay">Olay</option>
+				    <option value="hier2-oldspice">Old Spice</option>
+				    <option value="hier2-puffs">Puffs</option>
+				    <option value="hier2-safeguard">Safeguard</option>
+				</select>
+
+			</form>
+			
+			<br /><br />
+			<button id="btn-ser1">test</button>
+			<div id="form-output"></div>
+
+		</div>
+	</div>
+
+	<div class="center-embed">
+		<iframe frameborder="0" src="about:blank" name="iframe_a"></iframe>
+	</div>
+	<div class="sidebar-right">&nbsp;</div>
+
+</div>
+
+</body>
+</html>

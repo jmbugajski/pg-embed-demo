@@ -1,0 +1,221 @@
+/* P&G Colors
+
+	Green #218503
+	Light Green #9EA39D
+	Dark Grey #383838
+	P&G Blue #013DAF
+	P&G Blue Lighter #0095d9
+	P&G Blue Lightest #8dd8f5
+	Yellow #F9C801
+	EasyApps Purple #A1207B
+
+*/
+
+/* Main P&G FastMart Demo Screen */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+
+
+/* Main Screen Layout Sections */
+
+div.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 12% 86% 2%;
+  grid-template-rows: 12% 88%;
+  grid-gap: 1% 1%;
+  grid-template-areas: "top-left top-header top-right" "sidebar-left center-embed sidebar-right";
+}
+
+div.top-left {
+	grid-area: top-left;
+	background-color: #013daf;
+	padding: 4px 0 0 2px;
+}
+
+div.top-header {
+	grid-area: top-header;
+}
+
+div.top-right {
+	grid-area: top-right;
+}
+
+div.center-embed {
+	grid-area: center-embed;
+	border: 1px solid #999;
+}
+
+div.center-embed iframe {
+    width: 100%;
+    height: 900px;
+    border: 0;
+    left: 0;
+    top: 0;
+}
+
+div.sidebar-left {
+	grid-area: sidebar-left;
+	background-color: #eee;
+	border-right: #999 solid 1px;
+}
+
+div.sidebar-right { grid-area: sidebar-right; }
+
+
+/* Sidebar Form Selectors */
+
+div.sidebar-left .formblock, .storegroups, .prodhier {
+	padding: 12px;
+	font-size: 1.2em;
+}
+
+div.sidebar-left p {
+	font-weight: 600;
+	padding-bottom: 6px;
+}
+
+div#form-output {
+	width: 150px;
+	height: 200px;
+}
+
+.storegroups select, .prodhier select {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 2px 0 2px 0;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 150px;
+}
+
+
+/* Top Dashboard Buttons */
+
+div.left {
+	float: left;
+	border: 1px solid #333;
+	width: 230px;
+	height: 40px;
+	margin: 4px 8px 0 0;
+	background-position: 6px !important;
+	background-repeat: no-repeat !important;
+	background-size: 38px !important;
+}
+
+div.left:nth-child(-n+3) {
+	background-color: #A1207B !important;
+	background: url("../images/easyapps-logo-sm-sq.gif") left;
+}
+
+div.left:nth-child(-n+3):hover {
+	background-color: #660066 !important;
+}
+
+div.left:nth-child(4n) {
+	background-color: #0095d9 !important;
+	background: url("../images/infopage-logo-sm-sq.gif") left;
+}
+
+div.left:nth-child(4n):hover {
+	background-color: #013daf !important;
+}
+
+div.left:nth-child(5n) {
+	background-color: #06b055 !important;
+	background: url("../images/powerapps-logo-sm-sq.gif") left;
+}
+
+div.left:nth-child(5n):hover {
+	background-color: #057d3d !important;
+}
+
+div.left .label {
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-left: 24px;
+}
+
+div.left .label a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.left .label a:hover {
+	color: #eee;
+	text-decoration: none;
+}
+
+div.right {
+	float: right;
+}
+
+div.row {
+	overflow: hidden;
+	padding: 10px 0 10px 0;
+}
