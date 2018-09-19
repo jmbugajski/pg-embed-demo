@@ -131,9 +131,9 @@ div.sidebar-right { grid-area: sidebar-right; }
 }
 
 .placeholder {
-  grid-area: a;
-  align-self: center;
-  justify-self: center;
+	grid-area: a;
+	align-self: center;
+	justify-self: center;
 }
 
 
@@ -141,7 +141,7 @@ div.sidebar-right { grid-area: sidebar-right; }
 
 div.sidebar-left .customer, .storegroups, .prodhier {
 	padding: 10px 0 10px 10px;
-	font-size: 1.2em;
+	font-size: 1.0em;
 }
 
 div.sidebar-left p {
@@ -149,9 +149,27 @@ div.sidebar-left p {
 	padding-bottom: 6px;
 }
 
-div#form-output {
-	width: 150px;
-	height: 200px;
+
+/* Form Element Styling */
+.customer select {
+   -webkit-appearance: none;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: 1.0em;
+   margin: 2px 0 2px 0;
+   overflow: scroll;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 180px;
 }
 
 .storegroups select, .prodhier select {
@@ -175,8 +193,8 @@ div#form-output {
    width: 180px;
 }
 
-.customer select {
-   -webkit-appearance: none;
+.prodhier button {
+   -webkit-appearance: button;
    -webkit-border-radius: 2px;
    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
    -webkit-padding-end: 20px;
@@ -188,12 +206,12 @@ div#form-output {
    border: 1px solid #AAA;
    color: #555;
    font-size: 1.0em;
-   margin: 2px 0 2px 0;
-   overflow: scroll;
-   padding: 5px 10px;
-   text-overflow: ellipsis;
+   margin: 2px;
+   overflow: hidden;
+   padding: 4px;
+   text-align: center;
    white-space: nowrap;
-   width: 180px;
+   width: 24px;
 }
 
 

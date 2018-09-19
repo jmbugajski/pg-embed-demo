@@ -1,3 +1,4 @@
+/* Link Selects - Changing One Changes the Others */
 $(document).ready(function () {
     $("#type").change(function () {
         var store_group = $(this).val();
@@ -32,5 +33,12 @@ $(document).ready(function () {
         } else if (val == "hier1-none") {
             $("#hier2").html("<option value='hier2-none'>-- Brand --</option>");
         }
+    });
+});
+
+/* Clone the Selectors */
+$(document).ready(function() {
+    $("button").click(function(){
+        $("p").clone().appendTo("body");
     });
 });
