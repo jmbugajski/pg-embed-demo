@@ -150,8 +150,13 @@ body {
  /* Left Sidebar */
 /***************/
 
-.sidebar-left .customer, .storegroups, .prodhier {
+.sidebar-left .storegroups, .prodhier {
 	padding: 10px 0 10px 10px;
+	font-size: 1.0em;
+}
+
+.customer {
+	padding: 10px 0 0 10px;
 	font-size: 1.0em;
 }
 
