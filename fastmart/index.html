@@ -45,15 +45,15 @@
 						<div class="overSelect"></div>
 					</div>
 					<div id="checkboxes">
-						<label for="cust-cvs-us"><input type="checkbox" id="cust-cvs-us" value="cust-cvs-us"/>CVS US</label>
-						<label for="cust-demo-us"><input type="checkbox" id="cust-demo-us" value="cust-demo-us"/>Demo Customer US</label>
-						<label for="cust-dohle-de"><input type="checkbox" id="cust-dohle-de" value="cust-dohle-de"/>Dohle DE</label>
-						<label for="cust-edeka-de"><input type="checkbox" id="cust-edeka-de" value="cust-edeka-de"/>Edeka DE</label>
-						<label for="cust-tengel-de"><input type="checkbox" id="cust-tengel-de" value="cust-tengel-de"/>Tengelmann DE</label>
-						<label for="cust-uniprix"><input type="checkbox" id="cust-uniprix-ca" value="cust-uniprix-ca"/>Uniprix CA</label>
-						<label for="cust-walmart-ca"><input type="checkbox" id="cust-walmart-ca" value="cust-walmart-ca"/>Walmart CA</label>
-						<label for="cust-walmart-us"><input type="checkbox" id="cust-walmart-us" value="cust-walmart-us"/>Walmart US</label>
-						<label for="cust-wasgau-de"><input type="checkbox" id="cust-wasgau-de" value="cust-wasgau-de"/>Wasgau DE</label>
+						<label for="cust-cvs-us"><input type="checkbox" name="cust-cvs-us" value="1"/>CVS US</label>
+						<label for="cust-demo-us"><input type="checkbox" name="cust-demo-us" value="1"/>Demo Customer US</label>
+						<label for="cust-dohle-de"><input type="checkbox" name="cust-dohle-de" value="1"/>Dohle DE</label>
+						<label for="cust-edeka-de"><input type="checkbox" name="cust-edeka-de" value="1"/>Edeka DE</label>
+						<label for="cust-tengel-de"><input type="checkbox" name="cust-tengel-de" value="1"/>Tengelmann DE</label>
+						<label for="cust-uniprix"><input type="checkbox" name="cust-uniprix-ca" value="1"/>Uniprix CA</label>
+						<label for="cust-walmart-ca"><input type="checkbox" name="cust-walmart-ca" value="1"/>Walmart CA</label>
+						<label for="cust-walmart-us"><input type="checkbox" name="cust-walmart-us" value="1"/>Walmart US</label>
+						<label for="cust-wasgau-de"><input type="checkbox" name="cust-wasgau-de" value="1"/>Wasgau DE</label>
 					</div>
 				</div>
 			</div>
@@ -73,14 +73,33 @@
 					</select>
 			</div>
 
+			<div class="customer">
+				<p>Products</p>
+				<div class="multiselect">
+					<div class="selectBox" onclick="showCheckboxes2()">
+						<select>
+							<option>-- Select Context --</option>
+						</select>
+						<div class="overSelect"></div>
+					</div>
+					<div id="checkboxes2">
+						<label for="sel-sector"><input type="checkbox" name="sel-sector" value="1"/>Sector</label>
+						<label for="sel-cat"><input type="checkbox" name="sel-cat" value="1"/>Category</label>
+						<label for="sel-brand"><input type="checkbox" name="sel-brand" value="1"/>Brand</label>
+					</div>
+				</div>
+			</div>
+
 			<div class="prodhier">
-				<p>Product Selection</p>
-					<select name="sec1" id="sec1">
+				<div id="select-sec1">
+					<select name="" id='sec1'>
 						<option value="sec1-none">-- Sector --</option>
 						<option value="sec1-bh">BH</option>
 						<option value="sec1-hhc">HHC</option>
-					</select><br />
-					<select name="hier1" id="hier1">
+					</select>
+				</div>
+				<div id="select-hier1">	
+					<select name="" id='hier1'>
 						<option value="hier1-none">-- Category --</option>
 						<option value="hier1-bs">Bar Soap</option>
 						<option value="hier1-bt">Bath Tissue</option>
@@ -89,8 +108,10 @@
 						<option value="hier1-hl">Hand Liquids</option>
 						<option value="hier1-np">Napkins</option>
 						<option value="hier1-pt">Paper Towels</option>
-					</select><br />
-					<select name="hier2" id="hier2">
+					</select>
+				</div>
+				<div id="select-hier2">
+					<select name="" id='hier2'>
 						<option value="hier2-none">-- Brand --</option>
 						<option value="hier2-bounty">Bounty</option>
 						<option value="hier2-camay">Camay</option>
@@ -103,18 +124,22 @@
 						<option value="hier2-puffs">Puffs</option>
 						<option value="hier2-safeguard">Safeguard</option>
 					</select>
+				</div>
 
 				<input type="button" name="add" value="+" onclick="showDiv()" /><input type="button" name="subtract" value="-" onclick="hideDiv()" />
 
 			</div>
 
 			<div class="prodhier" id="prodhier2" style="display:none;">
-				<p>Product Selection (2)</p>
+				<p>Products (2)</p>
+				<div id="select-sec2">
 					<select name="sec2" id="sec2">
 						<option value="sec2-none">-- Sector --</option>
 						<option value="sec2-bh">BH</option>
 						<option value="sec2-hhc">HHC</option>
-					</select><br />
+					</select>
+				</div>
+				<div id="select-hier3">
 					<select name="hier3" id="hier3">
 						<option value="hier3-none">-- Category --</option>
 						<option value="hier3-bs">Bar Soap</option>
@@ -124,7 +149,9 @@
 						<option value="hier3-hl">Hand Liquids</option>
 						<option value="hier3-np">Napkins</option>
 						<option value="hier3-pt">Paper Towels</option>
-					</select><br />
+					</select>
+				</div>
+				<div id="select-hier4">
 					<select name="hier4" id="hier4">
 						<option value="hier4-none">-- Brand --</option>
 						<option value="hier4-bounty">Bounty</option>
@@ -138,6 +165,7 @@
 						<option value="hier4-puffs">Puffs</option>
 						<option value="hier4-safeguard">Safeguard</option>
 					</select>
+				</div>
 			</form>
 		</div>
 	</div>

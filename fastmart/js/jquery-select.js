@@ -1,4 +1,19 @@
-/* Link Selects - Changing One Changes the Others */
+/* Dynamic Controls Over Form Elements */
+$(document).ready(function () {
+    $('[name="sel-sector"]').change(function (e) {
+        $('#select-sec1').toggle(this.checked);
+        $('#select-sec2').toggle(this.checked);
+    });
+    $('[name="sel-cat"]').change(function (e) {
+        $('#select-hier1').toggle(this.checked);
+        $('#select-hier3').toggle(this.checked);
+    });
+    $('[name="sel-brand"]').change(function (e) {
+        $('#select-hier2').toggle(this.checked);
+        $('#select-hier4').toggle(this.checked);
+    });
+});
+
 $(document).ready(function () {
     $("#type").change(function () {
         var store_group = $(this).val();
@@ -55,5 +70,4 @@ $(document).ready(function () {
             $("#hier4").html("<option value='hier4-none'>-- Brand --</option>");
         }
     });
-
 });

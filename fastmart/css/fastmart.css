@@ -165,8 +165,13 @@ body {
  /* Form Element Styling */
 /************************/
 
+ #select-sec1, #select-sec2, #select-hier1, #select-hier2, #select-hier3, #select-hier4 {
+	 display: none;
+}
+
 .multiselect {
-	width: 200px;
+	width: 180px;
+	background: #fff;
 }
 
 .selectBox {
@@ -188,7 +193,7 @@ body {
 
 #checkboxes {
 	display: none;
-	border: 1px #dadada solid;
+	border: 1px #eee solid;
 }
 
 #checkboxes label {
@@ -196,7 +201,20 @@ body {
 }
 
 #checkboxes label:hover {
-	background-color: #1e90ff;
+	background-color: #8dd8f5;
+}
+
+#checkboxes2 {
+	display: none;
+	border: 1px #eee solid;
+}
+
+#checkboxes2 label {
+	display: block;
+}
+
+#checkboxes2 label:hover {
+	background-color: #8dd8f5;
 }
 
 .customer select {
