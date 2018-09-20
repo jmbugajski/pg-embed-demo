@@ -35,8 +35,3 @@ $(document).ready(function () {
         }
     });
 });
-
-/* Clone the Selectors */
-$("#clone-set").click(function () {
-  $('div.prodhier').clone(true).appendTo("div.sidebar-left");
-});
