@@ -1,4 +1,6 @@
-/* P&G Colors
+/*  
+
+	P&G Color Palette
 
 	Green #218503
 	Light Green #9EA39D
@@ -11,7 +13,10 @@
 
 */
 
-/* Main P&G FastMart Demo Screen */
+
+  /********************************/
+ /* CSS for FastMart Demo Screen */
+/********************************/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,9 +70,11 @@ body {
 }
 
 
-/* Main Screen Layout Sections */
+  /*******************************/
+ /* Main Screen Layout Sections */
+/*******************************/
 
-div.grid-container {
+.grid-container {
   display: grid;
   height: 100%;
   grid-template-columns: 14% 84%;
@@ -76,26 +83,26 @@ div.grid-container {
   grid-template-areas: "top-left top-header top-right" "sidebar-left center-embed sidebar-right";
 }
 
-div.top-left {
+.top-left {
 	grid-area: top-left;
 	background-color: #013daf;
 	padding: 4px 0 0 10px;
 }
 
-div.top-header {
+.top-header {
 	grid-area: top-header;
 }
 
-div.top-right {
+.top-right {
 	grid-area: top-right;
 }
 
-div.center-embed {
+.center-embed {
 	grid-area: center-embed;
 	border: 1px solid #999;
 }
 
-div.center-embed iframe {
+.center-embed iframe {
     width: 100%;
     height: 900px;
     border: 0;
@@ -103,17 +110,19 @@ div.center-embed iframe {
     top: 0;
 }
 	
-div.sidebar-left {
+.sidebar-left {
 	grid-area: sidebar-left;
 	background-color: #eee;
 	border-right: #999 solid 1px;
 }
 
-div.sidebar-right { grid-area: sidebar-right; }
+.sidebar-right { grid-area: sidebar-right; }
 
 
-/* Placeholder Center */
-
+  /**********************/
+ /* Placeholder Center */
+/**********************/
+ 
 * { box-sizing: border-box; }
 
 .wrapper > div {
@@ -137,20 +146,25 @@ div.sidebar-right { grid-area: sidebar-right; }
 }
 
 
-/* Left Sidebar */
+  /****************/
+ /* Left Sidebar */
+/***************/
 
-div.sidebar-left .customer, .storegroups, .prodhier {
+.sidebar-left .customer, .storegroups, .prodhier {
 	padding: 10px 0 10px 10px;
 	font-size: 1.0em;
 }
 
-div.sidebar-left p {
+.sidebar-left p {
 	font-weight: 600;
 	padding-bottom: 6px;
 }
 
 
-/* Form Element Styling */
+  /************************/
+ /* Form Element Styling */
+/************************/
+
 .multiselect {
   width: 200px;
 }
@@ -227,7 +241,7 @@ div.sidebar-left p {
    width: 180px;
 }
 
-.prodhier button {
+.prodhier input {
    -webkit-appearance: button;
    -webkit-border-radius: 2px;
    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -249,9 +263,11 @@ div.sidebar-left p {
 }
 
 
-/* Top Dashboard Buttons */
+  /*************************/
+ /* Top Dashboard Buttons */
+/*************************/
 
-div.left {
+.left {
 	float: left;
 	border: 1px solid #333;
 	border-radius: 6px;
@@ -263,34 +279,34 @@ div.left {
 	background-size: 38px !important;
 }
 
-div.left:nth-child(-n+3) {
+.left:nth-child(-n+3) {
 	background-color: #A1207B !important;
 	background: url("../images/easyapps-logo-sm-sq.gif") left;
 }
 
-div.left:nth-child(-n+3):hover {
+.left:nth-child(-n+3):hover {
 	background-color: #660066 !important;
 }
 
-div.left:nth-child(4n) {
+.left:nth-child(4n) {
 	background-color: #0095d9 !important;
 	background: url("../images/infopage-logo-sm-sq.gif") left;
 }
 
-div.left:nth-child(4n):hover {
+.left:nth-child(4n):hover {
 	background-color: #013daf !important;
 }
 
-div.left:nth-child(5n) {
+.left:nth-child(5n) {
 	background-color: #06b055 !important;
 	background: url("../images/powerapps-logo-sm-sq.gif") left;
 }
 
-div.left:nth-child(5n):hover {
+.left:nth-child(5n):hover {
 	background-color: #057d3d !important;
 }
 
-div.left .label {
+.left .label {
 	color: #fff;
 	line-height: 40px;
 	text-align: center;
@@ -300,21 +316,21 @@ div.left .label {
 	padding-left: 24px;
 }
 
-div.left .label a {
+.left .label a {
 	color: #fff;
 	text-decoration: none;
 }
 
-div.left .label a:hover {
+.left .label a:hover {
 	color: #eee;
 	text-decoration: none;
 }
 
-div.right {
+.right {
 	float: right;
 }
 
-div.row {
+.row {
 	overflow: hidden;
 	padding: 10px 0 10px 0;
 }

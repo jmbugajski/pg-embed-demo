@@ -13,7 +13,7 @@ $(document).ready(function () {
 			$("#level").html("<option value='level-none'>-- Cluster --</option>");
         }
     });
-	
+
     $("#hier1").change(function () {
         var val = $(this).val();
         if (val == "hier1-bs") {
@@ -34,4 +34,26 @@ $(document).ready(function () {
             $("#hier2").html("<option value='hier2-none'>-- Brand --</option>");
         }
     });
+
+    $("#hier3").change(function () {
+        var val = $(this).val();
+        if (val == "hier3-bs") {
+            $("#hier4").html("<option value='hier4-camay'>Camay</option><option value='hier4-ivory'>Ivory</option><option value='hier4-olay'>Olay</option><option value='hier4-oldspice'>Old Spice</option><option value='hier4-safeguard'>Safeguard</option>");
+        } else if (val == "hier3-bt") {
+            $("#hier4").html("<option value='hier4-charmin'>Charmin</option>");
+        } else if (val == "hier3-bw") {
+            $("#hier4").html("<option value='hier4-gilette'>Gilette</option><option value='hier4-herbalessences'>Herbal Essences</option><option value='hier4-ivory'>Ivory</option><option value='hier4-olay'>Olay</option><option value='hier4-oldspice'>Old Spice</option>");
+        } else if (val == "hier3-ft") {
+            $("#hier4").html("<option value='hier4-puffs'>Puffs</option>");
+        } else if (val == "hier3-hl") {
+            $("#hier4").html("<option value='hier4-ivory'>Ivory</option>");
+        } else if (val == "hier3-np") {
+            $("#hier4").html("<option value='hier4-bounty'>Bounty</option>");
+        } else if (val == "hier3-pt") {
+            $("#hier4").html("<option value='hier4-bounty'>Bounty</option>");
+        } else if (val == "hier3-none") {
+            $("#hier4").html("<option value='hier4-none'>-- Brand --</option>");
+        }
+    });
+
 });

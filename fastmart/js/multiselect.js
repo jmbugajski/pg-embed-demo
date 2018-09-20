@@ -10,3 +10,11 @@ function showCheckboxes() {
     expanded = false;
   }
 }
+
+function showDiv() {
+   document.getElementById('prodhier2').style.display = "block";
+}
+
+function hideDiv() {
+   document.getElementById('prodhier2').style.display = "none";
+}
