@@ -2,15 +2,12 @@
 $(document).ready(function () {
     $('[name="sel-sector"]').change(function (e) {
         $('#select-sec1').toggle(this.checked);
-        $('#select-sec2').toggle(this.checked);
     });
     $('[name="sel-cat"]').change(function (e) {
         $('#select-hier1').toggle(this.checked);
-        $('#select-hier3').toggle(this.checked);
     });
     $('[name="sel-brand"]').change(function (e) {
         $('#select-hier2').toggle(this.checked);
-        $('#select-hier4').toggle(this.checked);
     });
 });
 

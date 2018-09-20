@@ -22,11 +22,11 @@
 
 	<div class="top-header">
 		<div class="row">
-			<div class="left"><div class="label"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/4">Overview</a></div></div>
-			<div class="left"><div class="label">Product & Store</div></div>
-			<div class="left"><div class="label">Rolling Periods</div></div>
-			<div class="left"><div class="label">InfoPage</div></div>
-			<div class="left"><div class="label">PowerApps</div></div>
+			<div class="left"><div class="label"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/11">Overview</a></div></div>
+			<div class="left"><div class="label"><a target="iframe_a" href="https://35.201.92.166/embed/dashboards/14">Product & Store</a></div></div>
+			<div class="left"><div class="label"><a target="iframe_a" href="https://35.201.92.166/embed/dashboards/17">Measure Year Ago</a></div></div>
+			<div class="left"><div class="label"><a target="iframe_a" href="https://35.201.92.166/embed/explore/fastmart/fast_mart">InfoPage</a></div></div>
+			<div class="left"><div class="label"><a target="iframe_a" href="about:blank">PowerApps</a></div></div>
 		</div>
 	</div>
 
@@ -38,13 +38,13 @@
 		
 			<div class="customer">
 				<div class="multiselect">
-					<div class="selectBox" onclick="showCheckboxes()">
+					<div class="selectBox" onclick="showCheckboxes1()">
 						<select>
-							<option>-- Select Customers --</option>
+							<option>-- Customers --</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>
-					<div id="checkboxes">
+					<div id="checkboxes1">
 						<label for="cust-cvs-us"><input type="checkbox" name="cust-cvs-us" value="1"/>CVS US</label>
 						<label for="cust-demo-us"><input type="checkbox" name="cust-demo-us" value="1"/>Demo Customer US</label>
 						<label for="cust-dohle-de"><input type="checkbox" name="cust-dohle-de" value="1"/>Dohle DE</label>
@@ -78,7 +78,7 @@
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes2()">
 						<select>
-							<option>-- Select Context --</option>
+							<option value="sel-none">-- Context --</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>
@@ -92,44 +92,63 @@
 
 			<div class="prodhier">
 				<div id="select-sec1">
-					<select name="" id='sec1'>
-						<option value="sec1-none">-- Sector --</option>
-						<option value="sec1-bh">BH</option>
-						<option value="sec1-hhc">HHC</option>
-					</select>
+					<div class="multiselect">
+						<div class="selectBox" onclick="showCheckboxes3()">
+							<select>
+								<option value="sec1-none">-- Sector --</option>
+							</select>
+							<div class="overSelect"></div>
+						</div>
+						<div id="checkboxes3">
+							<label for="sec1-bc"><input type="checkbox" name="sec1-bc" value="1"/>BC</label>
+							<label for="sec1-hhc"><input type="checkbox" name="sec1-hhc" value="1"/>HHC</label>
+						</div>
+					</div>
 				</div>
-				<div id="select-hier1">	
-					<select name="" id='hier1'>
-						<option value="hier1-none">-- Category --</option>
-						<option value="hier1-bs">Bar Soap</option>
-						<option value="hier1-bt">Bath Tissue</option>
-						<option value="hier1-bw">Body Wash</option>
-						<option value="hier1-ft">Facial Tissue</option>
-						<option value="hier1-hl">Hand Liquids</option>
-						<option value="hier1-np">Napkins</option>
-						<option value="hier1-pt">Paper Towels</option>
-					</select>
+				<div id="select-hier1">
+					<div class="multiselect">
+						<div class="selectBox" onclick="showCheckboxes4()">
+							<select name="" id='hier1'>
+								<option value="hier1-none">-- Category --</option>
+							</select>
+							<div class="overSelect"></div>
+						</div>
+						<div id="checkboxes4">
+							<label for="hier1-bs"><input type="checkbox" name="hier1-bs" value="1"/>Bar Soap</label>
+							<label for="hier1-bt"><input type="checkbox" name="hier1-bt" value="1"/>Bath Tissue</label>
+							<label for="hier1-bw"><input type="checkbox" name="hier1-bw" value="1"/>Body Wash</label>
+							<label for="hier1-ft"><input type="checkbox" name="hier1-ft" value="1"/>Facial Tissue</label>
+							<label for="hier1-hl"><input type="checkbox" name="hier1-hl" value="1"/>Hand Liquids</label>
+							<label for="hier1-np"><input type="checkbox" name="hier1-np" value="1"/>Napkins</label>
+							<label for="hier1-pt"><input type="checkbox" name="hier1-pt" value="1"/>Paper Towels</label>
+						</div>
+					</div>
 				</div>
 				<div id="select-hier2">
-					<select name="" id='hier2'>
-						<option value="hier2-none">-- Brand --</option>
-						<option value="hier2-bounty">Bounty</option>
-						<option value="hier2-camay">Camay</option>
-						<option value="hier2-charmin">Charmin</option>
-						<option value="hier2-gilette">Gilette</option>
-						<option value="hier2-herbalessences">Herbal Essences</option>
-						<option value="hier2-ivory">Ivory</option>
-						<option value="hier2-olay">Olay</option>
-						<option value="hier2-oldspice">Old Spice</option>
-						<option value="hier2-puffs">Puffs</option>
-						<option value="hier2-safeguard">Safeguard</option>
-					</select>
+					<div class="multiselect">
+						<div class="selectBox" onclick="showCheckboxes5()">
+							<select name="" id='hier2'>
+								<option value="hier2-none">-- Brand --</option>
+							</select>
+							<div class="overSelect"></div>
+						</div>
+						<div id="checkboxes5">
+							<label for="hier2-bounty"><input type="checkbox" name="hier2-bounty" value="1"/>Bounty</label>
+							<label for="hier2-camay"><input type="checkbox" name="hier2-camay" value="1"/>Camay</label>
+							<label for="hier2-charmin"><input type="checkbox" name="hier2-charmin" value="1"/>Charmin</label>
+							<label for="hier2-gilette"><input type="checkbox" name="hier2-gilette" value="1"/>Gilette</label>
+							<label for="hier2-herbalessences"><input type="checkbox" name="hier2-herbalessences" value="1"/>Herbal Essences</label>
+							<label for="hier2-ivory"><input type="checkbox" name="hier2-ivory" value="1"/>Ivory</label>
+							<label for="hier2-olay"><input type="checkbox" name="hier2-olay" value="1"/>Olay</label>
+							<label for="hier2-oldspice"><input type="checkbox" name="hier2-oldspice" value="1"/>Old Spice</label>
+							<label for="hier2-puffs"><input type="checkbox" name="hier2-puffs" value="1"/>Puffs</label>
+							<label for="hier2-safeguard"><input type="checkbox" name="hier2-safeguard" value="1"/>Safeguard</label>
+						</div>
+					</div>
 				</div>
-
-				<input type="button" name="add" value="+" onclick="showDiv()" /><input type="button" name="subtract" value="-" onclick="hideDiv()" />
-
 			</div>
 
+<!-->
 			<div class="prodhier" id="prodhier2" style="display:none;">
 				<p>Products (2)</p>
 				<div id="select-sec2">
@@ -167,8 +186,10 @@
 					</select>
 				</div>
 			</form>
+			<input type="button" name="add" value="+" onclick="showDiv()" /><input type="button" name="subtract" value="-" onclick="hideDiv()" />
 		</div>
 	</div>
+-->
 
 	<div class="center-embed">
 		<iframe frameborder="0" src="placeholder.html" name="iframe_a"></iframe>
