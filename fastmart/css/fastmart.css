@@ -165,7 +165,12 @@ body {
  /* Form Element Styling */
 /************************/
 
- #select-sec1, #select-sec2, #select-hier1, #select-hier2, #select-hier3, #select-hier4 {
+ #select-sec1,
+ #select-sec2,
+ #select-hier1,
+ #select-hier2,
+ #select-hier3,
+ #select-hier4 {
 	 display: none;
 }
 
@@ -191,28 +196,18 @@ body {
 	bottom: 0;
 }
 
-#checkboxes {
-	display: none;
-	border: 1px #eee solid;
-}
-
-#checkboxes label {
-	display: block;
-}
-
-#checkboxes label:hover {
-	background-color: #8dd8f5;
-}
-
+#checkboxes,
 #checkboxes2 {
 	display: none;
 	border: 1px #eee solid;
 }
 
+#checkboxes label,
 #checkboxes2 label {
 	display: block;
 }
 
+#checkboxes label:hover,
 #checkboxes2 label:hover {
 	background-color: #8dd8f5;
 }
