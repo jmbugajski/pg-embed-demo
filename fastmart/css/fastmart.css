@@ -137,7 +137,7 @@ div.sidebar-right { grid-area: sidebar-right; }
 }
 
 
-/* Sidebar Form Selectors */
+/* Left Sidebar */
 
 div.sidebar-left .customer, .storegroups, .prodhier {
 	padding: 10px 0 10px 10px;
@@ -151,6 +151,40 @@ div.sidebar-left p {
 
 
 /* Form Element Styling */
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
 .customer select {
    -webkit-appearance: none;
    -webkit-border-radius: 2px;

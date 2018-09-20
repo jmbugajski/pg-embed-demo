@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>FastMart Demo</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="css/fastmart.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-	<script src="js/jquery-select.js"></script>
-	<script src="js/get-selected.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<title>FastMart Demo</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+		<script src="js/jquery-select.js"></script>
+		<script src="js/get-selected.js"></script>
+		<script src="js/multiselect.js"></script>
+		<link rel="stylesheet" href="css/fastmart.css" type="text/css" />
+	</head>
 
 <body>
 
@@ -36,21 +37,37 @@
 	<form id="form-products" action="">			
 		
 		<div class="customer">
-		  	<p>Customer</p>
-			  <select name="customer" size="4" multiple>
-			    <option value="cust-cvs-us">CVS US</option>
-			    <option value="cust-demo-us">Demo Customer US</option>
-			    <option value="cust-dohle-de">Dohle DE</option>
-			    <option value="cust-edeka-de">Edeka DE</option>
-			    <option value="cust-tengel-de">Tengelmann DE</option>
-			    <option value="cust-uniprix">Uniprix CA</option>
-			    <option value="cust-walmart-ca">Walmart CA</option>
-			    <option value="cust-walmart-us">Walmart US</option>
-			    <option value="cust-wasgau-de">Wasgau DE</option>
-			  </select>
+			<div class="multiselect">
+		    <div class="selectBox" onclick="showCheckboxes()">
+		      <select>
+		        <option>-- Select Customers --</option>
+		      </select>
+		      <div class="overSelect"></div>
+		    </div>
+		    <div id="checkboxes">
+		      <label for=""cust-cvs-us">
+		        <input type="checkbox" id="cust-cvs-us" value="cust-cvs-us"/>CVS US</label>
+		      <label for="cust-demo-us">
+		        <input type="checkbox" id="cust-demo-us" value="cust-demo-us"/>Demo Customer US</label>
+		      <label for="cust-dohle-de">
+		        <input type="checkbox" id="cust-dohle-de" value="cust-dohle-de"/>Dohle DE</label>
+		      <label for="cust-edeka-de">
+		        <input type="checkbox" id="cust-edeka-de" value="cust-edeka-de"/>Edeka DE</label>
+		      <label for="cust-tengel-de">
+		        <input type="checkbox" id="cust-tengel-de" value="cust-tengel-de"/>Tengelmann DE</label>
+		      <label for="cust-uniprix">
+		        <input type="checkbox" id="cust-uniprix-ca" value="cust-uniprix-ca"/>Uniprix CA</label>
+		      <label for="cust-walmart-ca">
+		        <input type="checkbox" id="cust-walmart-ca" value="cust-walmart-ca"/>Walmart CA</label>
+		      <label for="cust-walmart-us">
+		        <input type="checkbox" id="cust-walmart-us" value="cust-walmart-us"/>Walmart US</label>
+		      <label for="cust-wasgau-de">
+		        <input type="checkbox" id="cust-wasgau-de" value="cust-wasgau-de"/>Wasgau DE</label>
+		    </div>
+		  </div>
 		</div>
-		
-		<div class="storegroups">
+
+ 		<div class="storegroups">
 			<p>Store</p>
 				<select name="type" id="type">
 				    <option value="type-none">-- Grouping --</option>
@@ -62,17 +79,16 @@
 				</select>
 				<select name="store" id="store">
 				    <option value="store-none">-- Segment --</option>
-				</select>
-		</div>
-
-		<div class="prodhier">
+				</select><br /><br />
 			<p>Sector</p>
 				<select name="sector" id="sector">
 				    <option value="sec-none">-- Sector --</option>
 				    <option value="sec-bh">BH</option>
 				    <option value="sec-hhc">HHC</option>
-				</select><br /><br />
+				</select>
+		</div>
 
+		<div class="prodhier">
 			<p>Products</p>
 				<select name="hier1" id="hier1">
 				    <option value="hier1-none">-- Category --</option>
@@ -109,6 +125,7 @@
 	<div class="center-embed">
 		<iframe frameborder="0" src="placeholder.html" name="iframe_a"></iframe>
 	</div>
+	
 	<div class="sidebar-right">&nbsp;</div>
 
 </div>
