@@ -116,7 +116,9 @@ body {
 	border-right: #999 solid 1px;
 }
 
-.sidebar-right { grid-area: sidebar-right; }
+.sidebar-right {
+	grid-area: sidebar-right;
+}
 
 
   /**********************/
@@ -171,11 +173,8 @@ body {
 /************************/
 
 #select-sec1,
-#select-sec2,
 #select-hier1,
-#select-hier2,
-#select-hier3,
-#select-hier4 {
+#select-hier2 {
 	 display: none;
 }
 
