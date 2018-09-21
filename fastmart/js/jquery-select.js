@@ -15,13 +15,13 @@ $(document).ready(function () {
     $("#type").change(function () {
         var store_group = $(this).val();
         if (store_group == "type-store-group") {
-            $("#store").html("<option value='test-group-A'>Test Group A</option><option value='test-group-B'>Test Group B</option><option value='test-group-C'>Test Group C</option><option value='test-group-D'>Test Group D</option>");
+            $("#store").html("<option value='8'>-- Segment --</option><option value='8'>Test Group A</option><option value='9'>Test Group B</option><option value='10'>Test Group C</option><option value='11'>Test Group D</option>");
 			$("#level").html("<option value='level-uat'>SIT UAT Test</option>");
         } else if (store_group == "type-total-retailer") {
-            $("#store").html("<option value='store-none'>N/A</option>");
+            $("#store").html("<option value='8'>N/A</option>");
 			$("#level").html("<option value='level-none'>N/A</option>");
         } else if (store_group == "type-none") {
-            $("#store").html("<option value='store-none'>-- Segment --</option>");
+            $("#store").html("<option value='8'>-- Segment --</option>");
 			$("#level").html("<option value='level-none'>-- Cluster --</option>");
         }
     });
