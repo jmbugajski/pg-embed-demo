@@ -55,6 +55,11 @@ function showCheckboxes5() {
   }
 }
 
+/*
+Show or Hide a DIV with a Button Click
+<input type="button" name="add" value="+" onclick="showDiv()" /><input type="button" name="subtract" value="-" onclick="hideDiv()" /> 
+*/
+
 function showDiv() {
    document.getElementById('prodhier2').style.display = "block";
 }
