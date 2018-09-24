@@ -28,17 +28,21 @@ $(document).ready(function () {
 	$('[name="cust-walmart-us"]').change(function() {
 		if($(this).is(":checked")) {
 			$("#top-left").html("<img src='images/walmart-logo.png' width='160' />");
+			$("#center-data-note").html("<p>Data current to: 2017-06-02</p>");
 		}
 		if(!$(this).is(':checked')) {
 			$("#top-left").html("<a href='login.html' title='Logout'><img src='images/fastmart-f-only.gif' width='160' /></a>");
+			$("#center-data-note").html("<p></p>");
 		}
 	});
 	$('[name="cust-cvs-us"]').change(function() {
 		if($(this).is(":checked")) {
 			$("#top-left").html("<img src='images/cvs-logo.png' width='150' />");
+			$("#center-data-note").html("<p>Data current to: 2017-05-26</p>");
 		}
 		if(!$(this).is(':checked')) {
 			$("#top-left").html("<a href='login.html' title='Logout'><img src='images/fastmart-f-only.gif' width='160' /></a>");
+			$("#center-data-note").html("<p></p>");
 		}
 	});
 
