@@ -158,15 +158,22 @@ body {
 }
 
 .customer {
-	padding: 10px 0 0 10px;
+	padding: 0 0 0 10px;
 	font-size: 1.0em;
 }
 
 .sidebar-left p {
 	font-weight: 600;
-	padding-bottom: 6px;
+	padding: 10px 0 0 0;
 }
 
+.sidebar-left div.storegroups label {
+	font-weight: 600;
+	margin: 0;
+	padding: 8px 0 0 0;
+	display: block;
+	clear: both;
+}
 
   /************************/
  /* Form Element Styling */
@@ -240,7 +247,7 @@ body {
 	border: 1px solid #AAA;
 	color: #555;
 	font-size: 1.0em;
-	margin: 4px 0 2px 0;
+	margin: 2px 0 2px 0;
 	overflow: scroll;
 	padding: 5px 10px;
 	text-overflow: ellipsis;
