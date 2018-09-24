@@ -1,4 +1,4 @@
-/* Dynamic Controls Over Form Elements */
+// Change the Overview Button URL when Store Group Name Selected
 $(document).on('change', '#store', function(e) {
 	var store_selected = this.options[e.target.selectedIndex].value;
 	if (store_selected == "21") {
@@ -13,6 +13,7 @@ $(document).on('change', '#store', function(e) {
 });
 
 $(document).ready(function () {
+	// Watch for Products Context Selection
 	$('[name="sel-sector"]').change(function (e) {
 		$('#select-sec1').toggle(this.checked);
 	});
@@ -22,9 +23,29 @@ $(document).ready(function () {
 	$('[name="sel-brand"]').change(function (e) {
 		$('#select-hier2').toggle(this.checked);
 	});
+
+	// Change Customer Logos when Customer Checkbox Selected
+	$('[name="cust-walmart-us"]').change(function() {
+		if($(this).is(":checked")) {
+			$("#top-left").html("<img src='images/walmart-logo.png' width='160' />");
+		}
+		if(!$(this).is(':checked')) {
+			$("#top-left").html("<a href='login.html' title='Logout'><img src='images/fastmart-f-only.gif' width='160' /></a>");
+		}
+	});
+	$('[name="cust-cvs-us"]').change(function() {
+		if($(this).is(":checked")) {
+			$("#top-left").html("<img src='images/cvs-logo.png' width='150' />");
+		}
+		if(!$(this).is(':checked')) {
+			$("#top-left").html("<a href='login.html' title='Logout'><img src='images/fastmart-f-only.gif' width='160' /></a>");
+		}
+	});
+
 });
 
 $(document).ready(function () {
+	// Linked Selectors for Store Group Navigation
 	$("#type").change(function () {
 		var store_group = $(this).val();
 		if (store_group == "type-store-group") {
@@ -40,7 +61,7 @@ $(document).ready(function () {
 	});
 });
 
-/* Pull Out the Form Data to Use it for Something */
+// Pull Out the Form Data to Use it for Something
 $(document).ready(function() { 
 	$('#btn-ser1').click(function () { 
 		 var encoded = $("form#form-products").serialize();

@@ -78,7 +78,7 @@ body {
 	display: grid;
 	height: 100%;
 	grid-template-columns: 14% 84%;
-	grid-template-rows: 13% 87%;
+	grid-template-rows: 12% 88%;
 	grid-gap: 1% 1%;
 	grid-template-areas: "top-left top-header top-right" "sidebar-left center-embed sidebar-right";
 }
@@ -86,7 +86,10 @@ body {
 .top-left {
 	grid-area: top-left;
 	background-color: #013daf;
-	padding: 4px 0 0 10px;
+	height: 72px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
 }
 
 .top-header {
@@ -174,6 +177,7 @@ body {
 	display: block;
 	clear: both;
 }
+
 
   /************************/
  /* Form Element Styling */
