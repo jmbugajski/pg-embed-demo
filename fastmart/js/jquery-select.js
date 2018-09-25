@@ -1,16 +1,3 @@
-// Change the Overview Button URL when Store Group Name Selected
-$(document).on('change', '#store', function(e) {
-	var store_selected = this.options[e.target.selectedIndex].value;
-	if (store_selected == "11") {
-		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/11'>Overview</a>");
-    } else if (store_selected == "12") {
-		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/12'>Overview</a>");
-    } else if (store_selected == "13") {
-		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/13'>Overview</a>");
-	}
-});
-
-
 $(document).ready(function () {
 	// Watch for Products Context Selection
 	$('[name="sel-sector"]').change(function (e) {
@@ -23,21 +10,13 @@ $(document).ready(function () {
 		$('#select-hier2').toggle(this.checked);
 	});
 
-	// Change Overview Button URL when Trellis on Product or Brand
-	$('[name="trel-store"]').change(function() {
-		if($(this).is(":checked")) {
-			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/24'><span>By Product & Store</span></a>");
-		}
-		if(!$(this).is(':checked')) {
-			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/14'><span>By Product & Store</span></a>");
-		}
-	});
-	$('[name="trel-product"]').change(function() {
+	// Change Overview Button URL when Test Store Group Selected
+	$('[name="store-13"]').change(function() {
 		if($(this).is(":checked")) {
 			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/25'><span>By Product & Store</span></a>");
 		}
 		if(!$(this).is(':checked')) {
-			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/14'><span>By Product & Store</span></a>");
+			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/24'><span>By Product & Store</span></a>");
 		}
 	});
 
@@ -72,7 +51,7 @@ $(document).ready(function () {
 		if (store_group == "type-store-group") {
 			$("#level").html("<option value='level-uat'>SIT UAT Test</option>");
 			$("#geo").html("<option value='geo-il'>Illinois</option><option value='geo-oh'>Ohio</option><option selected value='geo-tn'>Tennessee</option>");
-			$("#store").html("<option value='11'>Control Store</option><option value='12'>Impact Store</option><option value='13'>Key Store</option>");
+			$("#store").html("<option value='11'>Control Store</option><option value='12'>Impact Store</option><option value='13'>Test Store</option>");
 		} else if (store_group == "type-total-retailer") {
 			$("#level").html("<option value='level-none'>N/A</option>");
 			$("#geo").html("<option value='geo-none'>N/A</option>");
