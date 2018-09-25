@@ -78,9 +78,9 @@ $(document).ready(function () {
 			$("#geo").html("<option value='geo-none'>N/A</option>");
 			$("#store").html("<option value='11'>N/A</option>");
 		} else if (store_group == "type-none") {
-			$("#level").html("<option value='level-none'>Store Group Type</option>");
-			$("#geo").html("<option value='geo-none'>Store Group Level</option>");
-			$("#store").html("<option value='11'>Store Group Name</option>");
+			$("#level").html("<option value='level-none'>-- Select --</option>");
+			$("#geo").html("<option value='geo-none'>-- Select --</option>");
+			$("#store").html("<option value='11'>-- Select --</option>");
 		}
 	});
 });
