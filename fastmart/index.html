@@ -35,10 +35,11 @@
 		<form id="form-products" action="">
 		
 			<div class="customer">
+				<p>Customers</p>
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes1()">
 						<select>
-							<option>Customers</option>
+							<option>-- Select --</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>
@@ -52,23 +53,6 @@
 						<label for="cust-walmart-ca"><input type="checkbox" class="customer-sel" name="cust-walmart-ca" value="1"/>Walmart CA</label>
 						<label for="cust-walmart-us"><input type="checkbox" class="customer-sel" name="cust-walmart-us" value="1"/>Walmart US</label>
 						<label for="cust-wasgau-de"><input type="checkbox" class="customer-sel" name="cust-wasgau-de" value="1"/>Wasgau DE</label>
-					</div>
-				</div>
-			</div>
-
-			<div class="customer">
-				<div class="multiselect">
-					<div class="selectBox" onclick="showCheckboxes7()">
-						<select>
-							<option value="trel-no">Trellis</option>
-						</select>
-						<div class="overSelect"></div>
-					</div>
-					<div id="checkboxes7">
-						<label for="trel-no"><input type="checkbox" name="trel-no" value="1"/>No Trellis</label>
-						<label for="trel-store"><input type="checkbox" name="trel-store" value="1"/>Store Group</label>
-						<label for="trel-product"><input type="checkbox" name="trel-product" value="1"/>Product Brand</label>
-						<label for="trel-retailer"><input type="checkbox" name="trel-retailer" value="1"/>Retailer</label>
 					</div>
 				</div>
 			</div>
@@ -98,20 +82,20 @@
 							<div class="overSelect"></div>
 						</div>
 						<div id="checkboxes6">
-							<label for="store-11"><input type="checkbox" name="store-11" value="11"/>Control Store</label>
-							<label for="store-12"><input type="checkbox" name="store-12" value="12"/>Impact Store</label>
-							<label for="store-13"><input type="checkbox" name="store-13" value="13"/>Test Store</label>
+							<label for="store-11"><input type="checkbox" name="store-11" value="11" CHECKED/>Control Store</label>
+							<label for="store-12"><input type="checkbox" name="store-12" value="12" CHECKED/>Impact Store</label>
+							<label for="store-13"><input type="checkbox" name="store-13" value="13" CHECKED/>Test Store</label>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="customer">
-				<p>Product Selection</p>
+				<p>Product Context</p>
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes2()">
 						<select>
-							<option value="sel-none">Context</option>
+							<option value="sel-none">-- Select --</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>
