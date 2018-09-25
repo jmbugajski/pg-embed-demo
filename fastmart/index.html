@@ -22,7 +22,7 @@
 
 	<div class="top-header">
 		<div class="row">
-			<div class="left"><div class="label" id="overview"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/21">Overview</a></div></div>
+			<div class="left"><div class="label" id="overview"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/11">Overview</a></div></div>
 			<div class="left"><div class="label" id="product-and-store"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/14"><span>By Product & Store</span></a></div></div>
 			<div class="left"><div class="label" id="measure-year-ago"><a target="iframe_a" href="https://35.227.249.152/embed/dashboards/17">By Measure</a></div></div>
 			<div class="left"><div class="label" id="infopage"><a target="iframe_a" href="https://35.227.249.152/embed/explore/fastmart/fast_mart?qid=HDKwiqZ482xioCmvLEle1h&toggle=fil,vis">InfoPage</a></div></div>
@@ -35,51 +35,80 @@
 		<form id="form-products" action="">
 		
 			<div class="customer">
-				<p>Customers</p>
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes1()">
 						<select>
-							<option>-- Select --</option>
+							<option>Customers</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>
 					<div id="checkboxes1">
-						<label for="cust-cvs-us"><input type="checkbox" name="cust-cvs-us" value="1"/>CVS US</label>
-						<label for="cust-demo-us"><input type="checkbox" name="cust-demo-us" value="1"/>Demo Customer US</label>
-						<label for="cust-dohle-de"><input type="checkbox" name="cust-dohle-de" value="1"/>Dohle DE</label>
-						<label for="cust-edeka-de"><input type="checkbox" name="cust-edeka-de" value="1"/>Edeka DE</label>
-						<label for="cust-tengel-de"><input type="checkbox" name="cust-tengel-de" value="1"/>Tengelmann DE</label>
-						<label for="cust-uniprix"><input type="checkbox" name="cust-uniprix-ca" value="1"/>Uniprix CA</label>
-						<label for="cust-walmart-ca"><input type="checkbox" name="cust-walmart-ca" value="1"/>Walmart CA</label>
-						<label for="cust-walmart-us"><input type="checkbox" name="cust-walmart-us" value="1"/>Walmart US</label>
-						<label for="cust-wasgau-de"><input type="checkbox" name="cust-wasgau-de" value="1"/>Wasgau DE</label>
+						<label for="cust-cvs-us"><input type="checkbox" class="customer-sel" name="cust-cvs-us" value="1"/>CVS US</label>
+						<label for="cust-demo-us"><input type="checkbox" class="customer-sel" name="cust-demo-us" value="1"/>Demo Customer US</label>
+						<label for="cust-dohle-de"><input type="checkbox" class="customer-sel" name="cust-dohle-de" value="1"/>Dohle DE</label>
+						<label for="cust-edeka-de"><input type="checkbox" class="customer-sel" name="cust-edeka-de" value="1"/>Edeka DE</label>
+						<label for="cust-tengel-de"><input type="checkbox" class="customer-sel" name="cust-tengel-de" value="1"/>Tengelmann DE</label>
+						<label for="cust-uniprix"><input type="checkbox" class="customer-sel" name="cust-uniprix-ca" value="1"/>Uniprix CA</label>
+						<label for="cust-walmart-ca"><input type="checkbox" class="customer-sel" name="cust-walmart-ca" value="1"/>Walmart CA</label>
+						<label for="cust-walmart-us"><input type="checkbox" class="customer-sel" name="cust-walmart-us" value="1"/>Walmart US</label>
+						<label for="cust-wasgau-de"><input type="checkbox" class="customer-sel" name="cust-wasgau-de" value="1"/>Wasgau DE</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="customer">
+				<div class="multiselect">
+					<div class="selectBox" onclick="showCheckboxes7()">
+						<select>
+							<option value="sel-none">Trellis</option>
+						</select>
+						<div class="overSelect"></div>
+					</div>
+					<div id="checkboxes7">
+						<label for="trel-no"><input type="checkbox" name="trel-no" value="1"/>No Trellis</label>
+						<label for="trel-store"><input type="checkbox" name="trel-store" value="1"/>Store Group</label>
+						<label for="trel-product"><input type="checkbox" name="trel-product" value="1"/>Product Brand</label>
+						<label for="trel-retailer"><input type="checkbox" name="trel-retailer" value="1"/>Retailer</label>
 					</div>
 				</div>
 			</div>
 
 	 		<div class="storegroups">
-				<label for="type">Store Grouping</label>
-					<select name="type" id="type">
-						<option value="type-none">-- Select --</option>
-						<option value="type-store-group">Store Group</option>
-						<option value="type-total-retailer">Total Retailer</option>
-					</select>
-				<label for="level">Store Group Type</label>
-					<select name="level" id="level">
-						<option value="level-none">-- Select --</option>
-					</select>
-				<label for="store">Store Group Name</label>
-					<select name="store" id="store">
-						<option value="21">-- Select --</option>
-					</select>
+				<p>Stores Selection</p>
+				<select name="type" id="type">
+					<option value="type-none">Store Grouping</option>
+					<option value="type-store-group">Store Group</option>
+					<option value="type-total-retailer">Total Retailer</option>
+				</select>
+				<select name="level" id="level">
+					<option value="level-none">Store Group Type</option>
+				</select>
+				<select name="geo" id="geo">
+					<option value="geo-none">Store Group Level</option>
+				</select>
+				<div id="select-sec-geo">
+					<div class="multiselect">
+						<div class="selectBox" onclick="showCheckboxes6()">
+							<select>
+								<option value="11">Store Group Name</option>
+							</select>
+							<div class="overSelect"></div>
+						</div>
+						<div id="checkboxes6">
+							<label for="store-11"><input type="checkbox" name="store-11" value="11"/>Control Store</label>
+							<label for="store-12"><input type="checkbox" name="store-12" value="12" CHECKED/>Impact Store</label>
+							<label for="store-13"><input type="checkbox" name="store-13" value="13" CHECKED/>Key Store</label>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="customer">
-				<p>Products</p>
+				<p>Product Selection</p>
 				<div class="multiselect">
 					<div class="selectBox" onclick="showCheckboxes2()">
 						<select>
-							<option value="sel-none">-- Context --</option>
+							<option value="sel-none">Context</option>
 						</select>
 						<div class="overSelect"></div>
 					</div>

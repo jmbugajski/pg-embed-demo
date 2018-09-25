@@ -171,12 +171,12 @@ body {
 /***************/
 
 .sidebar-left .storegroups, .prodhier {
-	padding: 10px 0 10px 10px;
+	padding: 10px 0 0 10px;
 	font-size: 1.0em;
 }
 
 .customer {
-	padding: 0 0 0 10px;
+	padding: 10px 0 0 10px;
 	font-size: 1.0em;
 }
 
@@ -188,7 +188,7 @@ body {
 .sidebar-left div.storegroups label {
 	font-weight: 600;
 	margin: 0;
-	padding: 8px 0 0 0;
+	padding: 6px 0 0 0;
 	display: block;
 	clear: both;
 }
@@ -230,7 +230,9 @@ body {
 #checkboxes2,
 #checkboxes3,
 #checkboxes4,
-#checkboxes5 {
+#checkboxes5,
+#checkboxes6,
+#checkboxes7 {
 	display: none;
 	border: 1px #999 solid;
 }
@@ -239,15 +241,22 @@ body {
 #checkboxes2 label,
 #checkboxes3 label,
 #checkboxes4 label,
-#checkboxes5 label {
+#checkboxes5 label,
+#checkboxes6 label,
+#checkboxes7 label {
 	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
 }
 
 #checkboxes1 label:hover,
 #checkboxes2 label:hover,
 #checkboxes3 label:hover,
 #checkboxes4 label:hover,
-#checkboxes5 label:hover {
+#checkboxes5 label:hover,
+#checkboxes6 label:hover,
+#checkboxes7 label:hover {
 	background-color: #0095d9;
 }
 

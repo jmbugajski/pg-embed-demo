@@ -1,9 +1,7 @@
 // Change the Overview Button URL when Store Group Name Selected
 $(document).on('change', '#store', function(e) {
 	var store_selected = this.options[e.target.selectedIndex].value;
-	if (store_selected == "21") {
-		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/21'>Overview</a>");
-    } else if (store_selected == "11") {
+	if (store_selected == "11") {
 		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/11'>Overview</a>");
     } else if (store_selected == "12") {
 		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/12'>Overview</a>");
@@ -11,6 +9,7 @@ $(document).on('change', '#store', function(e) {
 		$("#overview").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/13'>Overview</a>");
 	}
 });
+
 
 $(document).ready(function () {
 	// Watch for Products Context Selection
@@ -45,22 +44,24 @@ $(document).ready(function () {
 			$("#center-data-note").html("<p></p>");
 		}
 	});
-
 });
 
 $(document).ready(function () {
-	// Linked Selectors for Store Group Navigation
+	// Linked Selectors for Store Navigation
 	$("#type").change(function () {
 		var store_group = $(this).val();
 		if (store_group == "type-store-group") {
-			$("#store").html("<option value='21'>Test Group A</option><option value='11'>Test Group B</option><option value='12'>Test Group C</option><option value='13'>Test Group D</option>");
 			$("#level").html("<option value='level-uat'>SIT UAT Test</option>");
+			$("#geo").html("<option value='geo-il'>Illinois</option><option value='geo-oh'>Ohio</option><option selected value='geo-tn'>Tennessee</option>");
+			$("#store").html("<option value='11'>Control Store</option><option value='12'>Impact Store</option><option value='13'>Key Store</option>");
 		} else if (store_group == "type-total-retailer") {
-			$("#store").html("<option value='21'>N/A</option>");
 			$("#level").html("<option value='level-none'>N/A</option>");
+			$("#geo").html("<option value='geo-none'>N/A</option>");
+			$("#store").html("<option value='11'>N/A</option>");
 		} else if (store_group == "type-none") {
-			$("#store").html("<option value='21'>-- Segment --</option>");
-			$("#level").html("<option value='level-none'>-- Cluster --</option>");
+			$("#level").html("<option value='level-none'>Store Group Type</option>");
+			$("#geo").html("<option value='geo-none'>Store Group Level</option>");
+			$("#store").html("<option value='11'>Store Group Name</option>");
 		}
 	});
 });

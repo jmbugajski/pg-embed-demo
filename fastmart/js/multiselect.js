@@ -55,6 +55,29 @@ function showCheckboxes5() {
   }
 }
 
+function showCheckboxes6() {
+  var checkboxes = document.getElementById("checkboxes6");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+
+function showCheckboxes7() {
+  var checkboxes = document.getElementById("checkboxes7");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+
+
 /*
 Show or Hide a DIV with a Button Click
 <input type="button" name="add" value="+" onclick="showDiv()" /><input type="button" name="subtract" value="-" onclick="hideDiv()" /> 
