@@ -23,6 +23,24 @@ $(document).ready(function () {
 		$('#select-hier2').toggle(this.checked);
 	});
 
+	// Change Overview Button URL when Trellis on Product or Brand
+	$('[name="trel-store"]').change(function() {
+		if($(this).is(":checked")) {
+			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/24'><span>By Product & Store</span></a>");
+		}
+		if(!$(this).is(':checked')) {
+			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/14'><span>By Product & Store</span></a>");
+		}
+	});
+	$('[name="trel-product"]').change(function() {
+		if($(this).is(":checked")) {
+			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/25'><span>By Product & Store</span></a>");
+		}
+		if(!$(this).is(':checked')) {
+			$("#product-and-store").html("<a target='iframe_a' href='https://35.227.249.152/embed/dashboards/14'><span>By Product & Store</span></a>");
+		}
+	});
+
 	// Change Customer Logos when Customer Checkbox Selected
 	$('[name="cust-walmart-us"]').change(function() {
 		if($(this).is(":checked")) {
@@ -46,6 +64,7 @@ $(document).ready(function () {
 	});
 });
 
+
 $(document).ready(function () {
 	// Linked Selectors for Store Navigation
 	$("#type").change(function () {
@@ -65,6 +84,7 @@ $(document).ready(function () {
 		}
 	});
 });
+
 
 // Pull Out the Form Data to Use it for Something
 $(document).ready(function() { 
